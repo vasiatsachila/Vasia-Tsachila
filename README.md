@@ -8,16 +8,16 @@
 sim_seconds                              	0.083982                   	# Number of seconds simulated                              
 host_seconds                              	1309.57                   	# Real time elapsed on the host
 
-**CPI:**
+**CPI:**                                                                                               
 system.cpu.cpi                           	1.679650                   	# CPI: cycles per instruction
 
-**L2:**
-system.l2.tags.occ_percent::.cpu.inst    	0.002547                   	# Average percentage of cache occupancy
-system.l2.tags.occ_percent::.cpu.data    	0.969911                   	# Average percentage of cache occupancy
-system.l2.tags.occ_percent::total        	0.973719                   	# Average percentage of cache occupancy
+**L2:**                                                                                                          
+system.l2.tags.occ_percent::.cpu.inst    	0.002547                   	# Average percentage of cache occupancy          
+system.l2.tags.occ_percent::.cpu.data    	0.969911                   	# Average percentage of cache occupancy           
+system.l2.tags.occ_percent::total        	0.973719                   	# Average percentage of cache occupancy                     
 
-**L1/i:**
-system.cpu.icache.tags.occ_percent::total     0.705044                       # Average percentage of cache occupancy
+**L1/i:**                                                                                                                    
+system.cpu.icache.tags.occ_percent::total     0.705044                      # Average percentage of cache occupancy
 
 **L1/d:**
 system.cpu.dcache.tags.occ_percent::total 	0.984600                   	# Average percentage of cache occupancy
