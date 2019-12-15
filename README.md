@@ -222,7 +222,18 @@ l2_size=512kB
 ![What is this](er2_lbm.png)                                    
 
 ##### Tα αποτελέσματα που προέκυψαν για το 458.sjeng:
-![What is this](er2_jseng.png)                                                                         
+![What is this](er2_sjeng.png)           
+
+##### Τα γραφήματα που παρασουσιάζουν την επίδραση κάθε παράγοντα στην απόδοση κάθε benchmark είναι τα εξης:
+![What is this](cpi_cacheline_size.png)            
+![What is this](cpi_l1_data_association.png)                
+![What is this](cpi_l1_data_size.png)                            
+![What is this](cpi_l1_instruction_association.png)                
+![What is this](cpi_l1_instruction_size.png)
+![What is this](cpi_l1_data_association.png)                
+![What is this](cpi_l1_data_size.png)   
+![What is this](cpi_l2_association.png)                
+![What is this](cpi_l_size.png)                                         
 
 
 
