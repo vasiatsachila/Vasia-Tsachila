@@ -183,14 +183,15 @@ system.l2.overall_miss_rate::total       	0.999944                   	# miss rat
 Επείτα μας ζητήθηκε να εκτελέσουμε ξάνα τα benchmarks με μία επιπλέον παράμετρο,την **--cpu-clock=2GHz** αλλά δεν παράτηρήσαμε κάμια διαφορά στην παραμέτρους που αφορούν το ρολόι.
 
 
+    
 
-2GHz
-system.clk_domain.clock                      	1000                   	# Clock period in ticks
-system.cpu_clk_domain.clock                   	500                   	# Clock period in ticks
+2GHz                                                                                                                                
+system.clk_domain.clock                      	1000                   	# Clock period in ticks                          
+system.cpu_clk_domain.clock                   	500                   	# Clock period in ticks                              
 
-1GHz
-system.clk_domain.clock                      	1000                   	# Clock period in 
-system.cpu_clk_domain.clock                   	500                   	# Clock period in ticks
+1GHz                                                                                       
+system.clk_domain.clock                      	1000                   	# Clock period in               
+system.cpu_clk_domain.clock                   	500                   	# Clock period in ticks                
 
 
 
