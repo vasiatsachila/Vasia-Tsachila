@@ -34,23 +34,6 @@ system.cpu.dcache.overall_miss_rate::total 	0.014798                   	# miss r
 system.l2.overall_miss_rate::total       	0.282163                   	# miss rate for overall accesses
 
 
-Q3: 
-
-system.clk_domain.clock                 =     1000   παντού 
-system.cpu_clk_domain.clock          =     500    παντού 
-
-1GHz
-system.clk_domain.clock                      	1000                   	# Clock period in ticks
-system.cpu_clk_domain.clock                   	500                   	# Clock period in ticks
-
-2GHz
-system.clk_domain.clock                      	1000                   	# Clock period in 
-system.cpu_clk_domain.clock                   	500                   	# Clock period in ticks
-
-
-
-
-
 ------------------------------------------------------------------------------------------------------
 
 #### **429hmmer**
@@ -194,6 +177,27 @@ system.l2.overall_miss_rate::total       	0.999944                   	# miss rat
 ![What is this](l2_miss.png)
 
 Αυτό που παρατηρήσαμε είναι οτι όσο καλύτερο cpi έχει ενα benchmark τοσο καλύτερο simulation time παρουσιαζεί και τόσα λιγότερα miss εμφανίζει.Συνεπώς στην περίπτωση αυτή έχουμε λιγότερο χρόνο και λιγότερα errors.Επίσής απο τα γραφήματα παρατηρούμε οτι η τιμή των l1_dcache_miss και των l2_cache_miss εμφανίζει αρκέτα όμοια συμπεριφόρα σε αντίθεση με την τιμή των l1_icache_miss που δεν δείχνει σημαντική εξάρτηση απο το cpi ούτε απο κάποια άλλη παράμετρο.
+
+------------------------------------------------------------------------------------------------------------------------------
+
+Επείτα μας ζητήθηκε να εκτελέσουμε ξάνα τα benchmarks με μία επιπλέον παράμετρο,την **--cpu-clock=2GHz** αλλά δεν παράτηρήσαμε κάμια διαφορά στην παραμέτρους που αφορούν το ρολόι.
+
+
+
+2GHz
+system.clk_domain.clock                      	1000                   	# Clock period in ticks
+system.cpu_clk_domain.clock                   	500                   	# Clock period in ticks
+
+1GHz
+system.clk_domain.clock                      	1000                   	# Clock period in 
+system.cpu_clk_domain.clock                   	500                   	# Clock period in ticks
+
+
+
+
+
+
+
 
 
 
