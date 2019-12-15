@@ -1,5 +1,4 @@
-# Vasia-Tsachila
-![What is this](myimage.png)
+
 # Lab 2
 ### ερωτημα 1
 
@@ -186,8 +185,46 @@ system.cpu.dcache.overall_miss_rate::total 	0.060972                   	# miss r
 **L2/miss:**                                                                                                           
 system.l2.overall_miss_rate::total       	0.999944                   	# miss rate for overall accesses                   
 
+##### Τα γραφήματα που απεικονίζουν τις παραπάνω πληροφορίες για το σύνολο των benchmarks:
 
-----------------------------------------------------------------------------------------------------------------
+![What is this](cpi.png)
+![What is this](simulation_time.png)
+![What is this](l1_instruction_miss.png)
+![What is this](l1_data_miss.png)
+![What is this](l2_miss.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
