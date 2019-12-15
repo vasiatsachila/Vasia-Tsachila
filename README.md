@@ -194,7 +194,16 @@ system.clk_domain.clock                      	1000                   	# Clock pe
 system.cpu_clk_domain.clock                   	500                   	# Clock period in ticks                
 
 
+### ερωτημα 2
+Οι τίμές που επιλέξαμε να δώσουμε στις παραμέτρους των benchmarks ώστε να προκύψουν αντίστοιχοι συνδιασμοί είναι:              
 
+cacheline_size=16                                                                                   
+cacheline_size=64                                                                                               
+l1_data_assoc=1                                                                   
+l1_data_assoc=1                                                                   
+l1_data_assoc=8                                                                     
+l1_data_size=128kB                                                                                           
+l1_data_size=32kB
 
 
 
