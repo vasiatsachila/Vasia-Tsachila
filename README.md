@@ -189,7 +189,7 @@ system.l2.overall_miss_rate::total       	0.999944                   	# miss rat
 system.clk_domain.clock                      	1000                   	# Clock period in ticks                          
 system.cpu_clk_domain.clock                   	500                   	# Clock period in ticks                              
 
-1GHz                                                                                       
+default                                                                                       
 system.clk_domain.clock                      	1000                   	# Clock period in               
 system.cpu_clk_domain.clock                   	500                   	# Clock period in ticks                
 
@@ -204,8 +204,18 @@ l1_data_assoc=1
 l1_data_assoc=8                                                                     
 l1_data_size=128kB                                                                                           
 l1_data_size=32kB
+l1_instruction_assoc=1                                                                   
+l1_instruction_assoc=1                                                                   
+l1_instruction_assoc=8               
+l1_instruction_size=32kB
+l2_assoc=1                                              
+l2_assoc=2                                               
+l2_assoc=8                                
+l2_size=2MB                                                   
+l2_size=4MB                                                    
+l2_size=512kB                              
 
-
+##### Tα αποτελέσματα που προέκυψαν για το 401.bzip:
 
 
 
