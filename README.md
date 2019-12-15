@@ -6,6 +6,7 @@
 #### **401.bzip**
 **Time:**
 sim_seconds                              	0.083982                   	# Number of seconds simulated
+
 host_seconds                              	1309.57                   	# Real time elapsed on the host
 **CPI:**
 system.cpu.cpi                           	1.679650                   	# CPI: cycles per instruction
