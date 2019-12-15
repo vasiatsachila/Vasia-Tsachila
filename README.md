@@ -215,8 +215,14 @@ l2_size=2MB
 l2_size=4MB                                                    
 l2_size=512kB                              
 
-##### Tα αποτελέσματα που προέκυψαν για το 401.bzip:
+##### Tα αποτελέσματα που προέκυψαν για το 401.bzip:                                   
+![What is this](er2_bzip.png)                                                     
 
+##### Tα αποτελέσματα που προέκυψαν για το 470.lbm:                            
+![What is this](er2_lbm.png)                                    
+
+##### Tα αποτελέσματα που προέκυψαν για το 458.sjeng:
+![What is this](er2_jseng.png)                                                                         
 
 
 
