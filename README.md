@@ -200,14 +200,14 @@ system.cpu_clk_domain.clock                   	500                   	# Clock pe
 cacheline_size=16                                                                                   
 cacheline_size=64                                                                                               
 l1_data_assoc=1                                                                   
-l1_data_assoc=1                                                                   
+l1_data_assoc=2                                                                   
 l1_data_assoc=8                                                                     
 l1_data_size=128kB                                                                                           
-l1_data_size=32kB
-l1_instruction_assoc=1                                                                   
-l1_instruction_assoc=1                                                                   
+l1_data_size=32kB                                                            
+l1_instruction_assoc=1                                                                                                     
+l1_instruction_assoc=2                                                                   
 l1_instruction_assoc=8               
-l1_instruction_size=32kB
+l1_instruction_size=32kB                                                          
 l2_assoc=1                                              
 l2_assoc=2                                               
 l2_assoc=8                                
@@ -233,7 +233,7 @@ l2_size=512kB
 ![What is this](cpi_l1_data_association.png)                
 ![What is this](cpi_l1_data_size.png)   
 ![What is this](cpi_l2_association.png)                
-![What is this](cpi_l2_size.png)  
+![What is this](cpi_l2.png)  
 
 Παρατηρούμε οτι ο παράγοντας με την μεγαλύτερη επίδραση είναι ξεκάθαρα το μέγεθος του cacheline,η αύξηση του βελτιώνει την τιμή του cpi
 αισθητά, την κάνει δηλαδή να τείνει προς το 1 (άριστο).Επίσης η αύξηση του cacheline_size ελαχιστοποιεί τα errors του συστήματος καθώς μειώνονται οι τιμές των misses συνολικά και στα δύο είδη  μνήμων (l2 και l1_instruction-l1_data). Όσο αφορα την επίδραση του associativity παρατηρούμε οτι η αλλαγή της τιμής του στο l1_instruction δεν προκαλεί καμία διαφορά στα misses και η επιρροή του στην τιμή του cpi υπάρχει αλλά είναι αρκετά ασήμαντη.Σε αντίθεση όταν αυξάνουμε τις τιμές των l1_data_assoc και l2_assoc παρατηρούμε οτι το cpi αυξάνεται σε εναν σημαντικό βαθμό.Η αυξηση(μείωση) του l1_data_assoc μειώνει(αυξάνει) τα l1_data_miss και αυξάνει(μειώνει) τα l2_miss ενω η αύξηση(μείωση) του l2_assoc μειώνει(αυξάνει) τα l2_miss και αυξάνει(μειώνει) τα l1_data αντίστοιχα.Η τιμή τιμή των l1_instruction_miss δεν επηρεάζεται καθόλου απο την αλλαγή του associativity.Σχετικά με το μέγεθος της μνήμης,βλέπουμε οτι η μείωση του l1_instruction_size χειροτερεύει το cpi  και δεν επηρρεάζει καθόλου τα l1_instruction_miss,l1_data_miss  ενω η επιδρασή του στο l2_miss είναι σχεδόν μηδενική.Όπως και στο associativity  ετσι και στο size παρατηρούμε στην περίπτωση του l1_data η αύξηση(μείωση) του προκάλει
